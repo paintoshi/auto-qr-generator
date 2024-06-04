@@ -1,0 +1,12 @@
+{
+  "name": "auto-qr-generator",
+  "version": "1.0.0",
+  "description": "Takes a text file with content and generates nice looking QR codes as pngs",
+  "main": "index.js",
+  "repository": "https://github.com/paintoshi/auto-qr-generator",
+  "author": "Paintoshi",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.11.2"
+  }
+}
