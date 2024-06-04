@@ -1,6 +1,4 @@
-/*! https://github.com/nimiq/qr-encoder */
-/*! Modified self['QrCode'] = QrCode; into window.self to work with reactJS */
-/*! Some other react warning modifications */
+/*! https://github.com/nimiq/qr-creator */
 
 let qrCodeGenerator = null;
 
@@ -251,20 +249,6 @@ QrCode['render'] = QrCode.render;
     qrCodeGenerator = function(options, $element) {
         var settings = {};
         Object.assign(settings, defaults, options);
-        // map real names to minifyable properties used by closure compiler
-        /* Original code
-        settings.minVersion = settings['minVersion'];
-        settings.maxVersion = settings['maxVersion'];
-        settings.ecLevel = settings['ecLevel'];
-        settings.left = settings['left'];
-        settings.top = settings['top'];
-        settings.size = settings['size'];
-        settings.fill = settings['fill'];
-        settings.background = settings['background'];
-        settings.text = settings['text'];
-        settings.radius = settings['radius'];
-        settings.quiet = settings['quiet'];
-        */
 
         if ($element) {
             if ($element.width !== settings.size || $element.height !== settings.size) {
